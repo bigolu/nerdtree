@@ -335,7 +335,7 @@ function! s:handleLeftClick()
                 if currentNode.path.isDirectory
                     call currentNode.activate()
                 else
-                    call currentNode.activate({'reuse': 'all', 'where': 'p'})
+                    call currentNode.activate({'reuse': 'all', 'where': 't'})
                 endif
                 return
             endif
